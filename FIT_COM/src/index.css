@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #1de724 -78.47%,
+    #26f518 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(25, 222, 38, 0.74);
+}
+body {
+  margin: 0;
+  background-color: rgb(131, 255, 15);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #000000 0.89%,
+    #c5f0d2 17.23%,
+    #a8e3ba 42.04%,
+    #82CD47 55.12%,
+    #BFDB38 71.54%,
+    #FFFFE8 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #defae6 0.89%,
+    #c5f0d2 17.23%,
+    #a8e3ba 42.04%,
+    #a5dfbb 55.12%,
+    #5ce691 71.54%,
+    #33cf45 100%
+  );
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #1fff0a -78.47%,
+    #11d027 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgb(0, 255, 55) -341.94%,
+    #03f393 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #1aff0e 0%, #38ea10 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(29, 231, 15, 0.813);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(146, 193, 155, 0.863) 0%, hsl(108, 55%, 77%) 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #cafcc1 0%, #d7e7bc 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(89, 236, 45, 0.788);
+  filter: blur(750px);
+}
